@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#008708">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:weightSum="1">
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="145dp"
+                android:id="@+id/topOfDeck"
+                android:background="@drawable/blank" android:layout_gravity="top|left" android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:layout_weight="0.16" android:weightSum="1">
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Game"
+                    android:id="@+id/newGameButton" android:layout_gravity="center_vertical" android:layout_marginLeft="10dp"
+                    android:onClick="newGame" android:layout_marginTop="15dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/text1" android:layout_gravity="center_horizontal"
+                    android:text="Your opponent has" android:textSize="14dp"
+                    android:elegantTextHeight="false" android:gravity="center_horizontal"
+                    android:backgroundTint="#0069ff95" android:paddingTop="5dp" android:layout_weight="0.26"
+                    android:paddingBottom="0dp" android:inputType="none" android:textColor="#010101"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:id="@+id/oppNumCards" android:text="5"
+                    android:gravity="center_horizontal" android:backgroundTint="#00ffffff" android:singleLine="false"
+                    android:paddingTop="2dp" android:paddingBottom="0dp" android:numeric="integer"
+                    android:layout_marginTop="0dp" android:textColor="#010101"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text2" android:layout_gravity="center_horizontal" android:text="cards"
+                    android:backgroundTint="#00ffffff" android:textSize="14dp" android:gravity="center_horizontal"
+                    android:paddingTop="0dp" android:textColor="#010101"/>
+        </LinearLayout>
+        <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="145dp"
+                android:id="@+id/newCardButton" android:layout_gravity="top"
+                android:layout_marginTop="10dp" android:background="@drawable/cardback"
+                android:layout_marginLeft="0dp"
+                android:onClick="drawNewCard"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card1" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="25dp"
+                android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="0"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card2" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="1"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card3" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="2"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card4" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="3"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card5" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="25dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="4"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card6" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="5"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card7" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="6"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card8" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="7"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card9" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="25dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="8"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card10" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="9"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card11" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="10"/>
+        <ImageButton
+                android:layout_width="71dp"
+                android:layout_height="103dp"
+                android:id="@+id/card12" android:background="@drawable/blank" android:layout_gravity="top|left"
+                android:layout_marginTop="10dp" android:layout_marginLeft="15dp" android:scaleType="fitCenter"
+                android:onClick="playCard" android:tag="11"/>
+    </LinearLayout>
+</LinearLayout>
+
